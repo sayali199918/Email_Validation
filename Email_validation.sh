@@ -1,6 +1,9 @@
 #!/bin/bash -x
-Email=".co"
-Emailpatt="([.][a-zA-Z]{2,4})$"
+#email=".xyz"
+#email="+xyz"
+#email="_xyz"
+Email="-xyz"
+Emailpatt="^([._+-][0-9a-zA-Z]+)"
 if [[ $Email =~ $Emailpatt ]]
 then
 	echo "valid email"
