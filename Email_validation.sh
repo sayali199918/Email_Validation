@@ -1,6 +1,7 @@
 #!/bin/bash -x
-Email=".in"
-Emailpatt="^([.][a-zA-Z]{2})$"
+echo "Enter the valid email:"Email
+read Email
+EmailPatt="^[0-9a-zA-Z]+([+_.-][0-9a-zA-Z]+)*@[a-zA-Z0-9]+([.][a-zA-Z]{2,3}){1,2}$"
 if [[ $Email =~ $Emailpatt ]]
 then
 	echo "valid email"
